@@ -1,0 +1,84 @@
+
+h1{
+  align-items: center;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.container input,
+.container select,
+.container button {
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.list-container {
+  border: 2px solid #000;
+  padding: 10px;
+  max-width: 400px; /* Adjust as needed */
+}
+
+.list-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-container li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.list-container li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Existing CSS styles remain unchanged */
+
+.list-container li {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.list-container li:hover {
+  background-color: #f0f0f0;
+}
+
+/* New styles for exercise types */
+.list-container li.strength {
+  color: red;
+}
+
+.list-container li.cardio {
+  color: purple;
+}
+
+.list-container li.flexibility {
+  color: green;
+}
+
+/* Existing CSS styles remain unchanged */
+
+.past-lists {
+  margin-top: 50px;
+}
+
+.past-lists h2 {
+  margin-bottom: 10px;
+}
+
+.past-lists .list-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  margin-bottom: 50px;
+}

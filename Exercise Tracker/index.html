@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Aloof Exercise Tracker</h1>
+  <div class="container">
+    <input type="number" id="sets" placeholder="Sets">
+    <input type="number" id="reps" placeholder="Reps">
+    <input type="text" id="exerciseName" placeholder="Exercise Name">
+    <select id="exerciseType">
+      <option value="strength">Strength</option>
+      <option value="cardio">Cardio</option>
+      <option value="flexibility">Flexibility</option>
+    </select>
+    <button onclick="addExercise()">Add Exercise</button>
+    <button onclick="saveToLocalStorage()">Save</button>
+    <button onclick="emailExercises()">Email</button>
+    <button onclick="startNewList()">New List</button>
+  </div>
+  <div class="list-container">
+    <ul id="exercise-list"></ul>
+
+  <button onclick="saveToPastList()">Save to Past List</button>
+  </div>
+  <div class="past-lists">
+    <h2>Past Lists</h2>
+    <div id="past-lists-container"></div>
+        <button onclick="clearLocalStorage()">Clear Local Storage</button> <!-- New button -->
+  </div>
+  <script src="defal.js"></script>
+</body>
+</html>
